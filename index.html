@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>HTML5 Form</title>
+
+</head>
+<body>
+<div class="container">
+
+    <form class="border rounded mt-4">
+        <nav class="navbar navbar-light bg-light border-bottom">
+            <h4>Payment Form Example</h4>
+        </nav>
+
+        <div class="alert alert-danger m-3" role="alert">
+        Some fields are missing
+        </div>
+
+        <div class="form-row px-2">
+            <div class="form-group col-md-5 px-3">
+                <label for="inputCC">Card #</label>
+                <input type="text" class="form-control" id="inputCC" placeholder="XXXXXXXXXXXXXXXX">
+            </div>
+            <div class="form-group col-md-3 px-3">
+                <label for="inputCVC">CVC #</label>
+                <input type="password" class="form-control" id="inputCVC" placeholder="0000">
+            </div>
+            <div class="form-group col-md-4 px-3">
+                <label for="inputAmount">Amount</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input type="text" class="form-control" id="inputAmount" placeholder="Amount">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row px-2">
+            <div class="col-md-6 mb-3 px-3">
+                <label for="inputFirstName">First Name</label>
+                <input type="text" class="form-control" id="inputFirstName">
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            </div>
+            <div class="col-md-6 mb-3 px-3">
+                <label for="inputLastName">Last Name</label>
+                <input type="text" class="form-control" id="inputLastName">
+        	</div>
+		</div>
+
+        <div class="form-row px-2">
+            <div class="form-group col-md-6 px-3">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-3 px-3">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Pick a state</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="form-group col-md-3 px-3">
+                <label for="inputZip">Postal Code</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+        </div>
+
+        <div class="form-row px-2">
+            <div class="form-group col-md-3 px-3">
+                <label>We accept:</label>
+                <br>
+                <div class="pl-4 bg-secondary rounded p-2 form-check-inline">
+                    <input class="form-check-input" type="radio" name="creditcard" checked>
+                    <label class="form-check-label mr-3" for="mastercard">
+                        <i class="fab fa-cc-mastercard fa-lg"></i>
+                    </label>
+                    <input class="form-check-input" type="radio" name="creditcard">
+                    <label class="form-check-label mr-3" for="visa">
+                        <i class="fab fa-cc-visa fa-lg"></i>
+                    </label>
+                    <input class="form-check-input" type="radio" name="creditcard">
+                    <label class="form-check-label mr-3" for="dinerClub">
+                        <i class="fab fa-cc-diners-club fa-lg"></i>
+                    </label>
+                    <input class="form-check-input" type="radio" name="creditcard">
+                    <label class="form-check-label mr-3" for="americanExpress">
+                        <i class="fab fa-cc-amex fa-lg"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="form-group col-md-6 px-3">
+                <label for="inputMessage">Message</label>
+                <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-light bg-light border-top">
+            <div></div>
+            <div>
+                <button type="button" class="btn btn-secondary btn-sm">Cancel</button>
+                <button type="submit" class="btn btn-primary btn-sm">Send</button>
+            </div>
+        </nav>
+    </form>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
