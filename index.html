@@ -12,26 +12,24 @@
 <body>
 <div class="container">
 
-    <form class="border rounded mt-4">
+    <form class="this-form border rounded mt-4">
         <nav class="navbar navbar-light bg-light border-bottom">
             <h4>Payment Form Example</h4>
         </nav>
 
-        <div class="alert alert-danger m-3" role="alert">
-        Some fields are missing
-        </div>
+        <div class="alert" role="alert"></div>
 
         <div class="form-row px-2">
             <div class="form-group col-md-5 px-3">
-                <label for="inputCC">Card #</label>
-                <input type="text" class="form-control" id="inputCC" placeholder="XXXXXXXXXXXXXXXX">
+                <label for="inputCC">Card #<span class="card-alert"></span></label>
+                <input type="text" class="form-control" id="inputCreditCard" placeholder="XXXXXXXXXXXXXXXX" maxlength="16">
             </div>
             <div class="form-group col-md-3 px-3">
-                <label for="inputCVC">CVC #</label>
-                <input type="password" class="form-control" id="inputCVC" placeholder="0000">
+                <label for="inputCVC">CVC #<span class="cvc-alert"></span></label>
+                <input type="password" class="form-control" id="inputCVC" placeholder="0000" maxlength="4">
             </div>
             <div class="form-group col-md-4 px-3">
-                <label for="inputAmount">Amount</label>
+                <label for="inputAmount">Amount<span class="amount-alert"></span></label>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text">$</span>
@@ -43,33 +41,45 @@
 
         <div class="form-row px-2">
             <div class="col-md-6 mb-3 px-3">
-                <label for="inputFirstName">First Name</label>
+                <label for="inputFirstName">First Name<span class="firstname-alert"></span></label>
                 <input type="text" class="form-control" id="inputFirstName">
-            <div class="valid-feedback">
-                Looks good!
-            </div>
             </div>
             <div class="col-md-6 mb-3 px-3">
-                <label for="inputLastName">Last Name</label>
+                <label for="inputLastName">Last Name<span class="lastname-alert"></span></label>
                 <input type="text" class="form-control" id="inputLastName">
         	</div>
 		</div>
 
         <div class="form-row px-2">
             <div class="form-group col-md-6 px-3">
-                <label for="inputCity">City</label>
+                <label for="inputCity">City<span class="city-alert"></span></label>
                 <input type="text" class="form-control" id="inputCity">
             </div>
             <div class="form-group col-md-3 px-3">
-                <label for="inputState">State</label>
+                <label for="inputState">State<span class="state-alert"></span></label>
                 <select id="inputState" class="form-control">
                     <option selected>Pick a state</option>
-                    <option>...</option>
+                    <option>Alabama</option><option>Alaska</option><option>Arizona</option>
+                    <option>Arkansas</option><option>California</option><option>Colorado</option>
+                    <option>Connecticut</option><option>Delaware</option><option>Florida</option>
+                    <option>Georgia</option><option>Hawaii</option><option>Idaho</option>
+                    <option>Illinois</option><option>Indiana</option> <option>Iowa</option>
+                    <option>Kansas</option><option>Kentucky</option><option>Louisiana</option>
+                    <option>Maine</option><option>Maryland</option><option>Massachusetts</option>
+                    <option>Michigan</option><option>Minnesota</option><option>Mississippi</option>
+                    <option>Missouri</option><option>Montana Nebraska</option><option>Nevada</option>
+                    <option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option>
+                    <option>New York</option><option>North Carolina</option><option>North Dakota</option>
+                    <option>Ohio</option><option>Oklahoma</option><option>Oregon</option>
+                    <option>Pennsylvania Rhode Island</option> <option>South Carolina</option><option>South Dakota</option>
+                    <option>Tennessee</option><option>Texas</option><option>Utah</option>
+                    <option>Vermont</option><option>Virginia</option><option>Washington</option>
+                    <option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option>
                 </select>
             </div>
             <div class="form-group col-md-3 px-3">
-                <label for="inputZip">Postal Code</label>
-                <input type="text" class="form-control" id="inputZip">
+                <label for="inputZip">Postal Code<span class="zip-alert"></span></label>
+                <input type="text" class="form-control" id="inputZip" maxlength="5">
             </div>
         </div>
 
@@ -116,6 +126,7 @@
 </div>
 
 
+<script src="validate.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
