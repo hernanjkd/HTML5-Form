@@ -21,7 +21,7 @@ function checkForm(e) {
 
     // Can't be empty
     if (cc === '') {
-        markField('card-alert','Can not be empty');
+        markField('card-alert','Cannot be empty');
         invalid.push(true);
     }
 
@@ -44,7 +44,7 @@ function checkForm(e) {
 
     // Can't be empty
     if (cvc === '') {
-        markField('cvc-alert','Can not be empty');
+        markField('cvc-alert','Cannot be empty');
         invalid.push(true);
     }
 
@@ -78,7 +78,7 @@ function checkForm(e) {
 /****** FIRST NAME ******/
     // Check that it's not empty
     if (form_div.inputFirstName.value === '') {
-        markField('firstname-alert','Can not be empty');
+        markField('firstname-alert','Cannot be empty');
         invalid.push(true);
     }
 
@@ -92,7 +92,7 @@ function checkForm(e) {
 /****** LAST NAME ******/
     // Check that it's not empty
     if (form_div.inputLastName.value === '') {
-        markField('lastname-alert','Can not be empty');
+        markField('lastname-alert','Cannot be empty');
         invalid.push(true);
     }
 
@@ -106,7 +106,7 @@ function checkForm(e) {
 /****** CITY ******/
     // Check that it's not empty
     if (form_div.inputCity.value === '') {
-        markField('city-alert','Can not be empty');
+        markField('city-alert','Cannot be empty');
         invalid.push(true);
     }
 
@@ -136,7 +136,7 @@ function checkForm(e) {
 
     // Check that it's not empty
     if (zip === '') {
-        markField('zip-alert','Can not be empty');
+        markField('zip-alert','Cannot be empty');
         invalid.push(true);
     }
 
